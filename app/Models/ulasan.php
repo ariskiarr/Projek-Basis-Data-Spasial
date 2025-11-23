@@ -17,4 +17,8 @@ class ulasan extends Model
         'rating',
         'tanggal',
     ];
+
+    public function tempat_makan(){
+        return $this->belongsTo(tempat_makan::class,'tempat_id');
+    }
 }

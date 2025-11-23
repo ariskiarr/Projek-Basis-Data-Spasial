@@ -17,7 +17,7 @@ class menu_makan extends Model
 
     ];
 
-    function tempat_makan(){
+    public function tempat_makan(){
         return $this->belongsTo(tempat_makan::class,'tempat_id');
     }
 
