@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id('id');
             $table->foreignId('tempat_id')->constrained('tempat_makan');
             $table->string('nama_menu');
-            $table->decimal('harga',3,2);
-            $table->decimal('kalori',3,2)->nullable();
+            $table->decimal('harga');
+            $table->decimal('kalori')->nullable();
         });
     }
 
