@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nama_menu');
             $table->decimal('harga');
             $table->decimal('kalori')->nullable();
+
         });
     }
 
