@@ -17,7 +17,7 @@ class MenuMakanController extends Controller
         $tempatMakan = tempat_makan::findOrFail($tempat_id);
         $menus = menu_makan::where('tempat_id', $tempat_id)->get();
 
-        return view('admin.menu-makan.index', compact('tempatMakan', 'menus'));
+        return view('admin.menu-makan.index-new', compact('tempatMakan', 'menus'));
     }
 
     /**
@@ -26,7 +26,7 @@ class MenuMakanController extends Controller
     public function create(string $tempat_id)
     {
         $tempatMakan = tempat_makan::findOrFail($tempat_id);
-        return view('admin.menu-makan.create', compact('tempatMakan'));
+        return view('admin.menu-makan.create-new', compact('tempatMakan'));
     }
 
     /**
@@ -67,7 +67,7 @@ class MenuMakanController extends Controller
         $tempatMakan = tempat_makan::findOrFail($tempat_id);
         $menu = menu_makan::where('tempat_id', $tempat_id)->findOrFail($id);
 
-        return view('admin.menu-makan.edit', compact('tempatMakan', 'menu'));
+        return view('admin.menu-makan.edit-new', compact('tempatMakan', 'menu'));
     }
 
     /**

@@ -16,14 +16,16 @@ class TempatMakanController extends Controller
     public function index()
     {
         $tempatMakan = DB::table('tempat_makan')
+            ->join('kategori', 'tempat_makan.kategori_id', '=', 'kategori.id')
             ->select(
                 'tempat_makan.*',
+                'kategori.nama_kategori',
                 DB::raw('ST_X(geom) as longitude'),
                 DB::raw('ST_Y(geom) as latitude')
             )
             ->paginate(15);
 
-        return view('admin.tempat-makan.index', compact('tempatMakan'));
+        return view('admin.tempat-makan.index-new', compact('tempatMakan'));
     }
 
     /**
@@ -35,7 +37,7 @@ class TempatMakanController extends Controller
         $latitude = $request->query('latitude');
         $longitude = $request->query('longitude');
 
-        return view('admin.tempat-makan.create', compact('kategori', 'latitude', 'longitude'));
+        return view('admin.tempat-makan.create-new', compact('kategori', 'latitude', 'longitude'));
     }
 
     /**
@@ -106,7 +108,7 @@ class TempatMakanController extends Controller
 
         $kategori = kategori::all();
 
-        return view('admin.tempat-makan.edit', compact('tempatMakan', 'kategori'));
+        return view('admin.tempat-makan.edit-new', compact('tempatMakan', 'kategori'));
     }
 
     /**
