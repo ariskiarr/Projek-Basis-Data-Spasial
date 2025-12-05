@@ -23,10 +23,10 @@
     <body class="antialiased bg-gray-50">
         <div class="min-h-screen flex">
             <!-- Left Side - Branding -->
-            <div class="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-blue-600 to-indigo-700 p-12 flex-col justify-between">
+            {{-- <div class="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-blue-600 to-indigo-700 p-12 flex-col justify-between">
                 <div>
                     <h1 class="text-white text-4xl font-bold mb-4">CalorieMaps</h1>
-                    <p class="text-blue-100 text-lg">Discover and explore food places with nutritional information</p>
+                    <p class="text-blue-100 text-lg">Temukan dan jelajahi tempat makan dengan informasi nutrisi</p>
                 </div>
                 <div class="space-y-6">
                     <div class="flex items-start space-x-4">
@@ -37,8 +37,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-white font-semibold mb-1">Location-Based</h3>
-                            <p class="text-blue-100 text-sm">Find restaurants near you on interactive maps</p>
+                            <h3 class="text-white font-semibold mb-1">Berbasis Lokasi</h3>
+                            <p class="text-blue-100 text-sm">Temukan restoran terdekat dengan peta interaktif</p>
                         </div>
                     </div>
                     <div class="flex items-start space-x-4">
@@ -48,8 +48,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-white font-semibold mb-1">Calorie Information</h3>
-                            <p class="text-blue-100 text-sm">Get detailed nutritional data for menu items</p>
+                            <h3 class="text-white font-semibold mb-1">Informasi Kalori</h3>
+                            <p class="text-blue-100 text-sm">Dapatkan data nutrisi lengkap untuk setiap menu</p>
                         </div>
                     </div>
                     <div class="flex items-start space-x-4">
@@ -59,15 +59,15 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-white font-semibold mb-1">Reviews & Ratings</h3>
-                            <p class="text-blue-100 text-sm">Share and read community feedback</p>
+                            <h3 class="text-white font-semibold mb-1">Ulasan & Rating</h3>
+                            <p class="text-blue-100 text-sm">Bagikan dan baca pengalaman komunitas</p>
                         </div>
                     </div>
                 </div>
                 <div class="text-blue-100 text-sm">
-                    © 2025 CalorieMaps. All rights reserved.
+                    © 2025 CalorieMaps. Hak cipta dilindungi.
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Right Side - Form -->
             <div class="flex-1 flex items-center justify-center p-8">

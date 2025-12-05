@@ -33,6 +33,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
-            FoodSeeder::class,]);
+            FoodSeeder::class,
+            kampus::class,
+            kategori::class,
+            tempat_makan::class,
+            menu_makan::class,
+        ]);
     }
 }
