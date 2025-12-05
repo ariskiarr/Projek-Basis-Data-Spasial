@@ -1,13 +1,13 @@
 <x-guest-layout>
-    <div class="bg-white rounded-xl shadow-lg p-8">
-        <div class="mb-8">
+    <div class="bg-white rounded-xl shadow-lg px-8 py-12 min-h-[600px]">
+        <div class="mb-6">
             <h2 class="text-3xl font-bold text-gray-900 mb-2">Welcome back</h2>
             <p class="text-gray-600">Sign in to your account to continue</p>
         </div>
 
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
-        <form method="POST" action="{{ route('login') }}" class="space-y-5">
+        <form method="POST" action="{{ route('login') }}" class="space-y-4">
             @csrf
 
             <!-- Email -->
@@ -74,7 +74,7 @@
         </form>
 
         <!-- Register Link -->
-        <div class="mt-6 text-center pt-6 border-t border-gray-200">
+        <div class="mt-8 text-center pt-6 border-t border-gray-200">
             <p class="text-sm text-gray-600">
                 Don't have an account?
                 <a href="{{ route('register') }}" class="font-medium text-blue-600 hover:text-blue-500">

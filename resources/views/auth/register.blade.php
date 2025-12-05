@@ -1,11 +1,11 @@
 <x-guest-layout>
-    <div class="bg-white rounded-xl shadow-lg p-8">
-        <div class="mb-8">
+    <div class="bg-white rounded-xl shadow-lg px-8 py-12 min-h-[650px]">
+        <div class="mb-6">
             <h2 class="text-3xl font-bold text-gray-900 mb-2">Create account</h2>
             <p class="text-gray-600">Get started with your free account</p>
         </div>
 
-        <form method="POST" action="{{ route('register') }}" class="space-y-5">
+        <form method="POST" action="{{ route('register') }}" class="space-y-4">
             @csrf
 
             <!-- Name -->
